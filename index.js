@@ -1,5 +1,11 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+// solution
+
+const isPalindrome = (word) => word === reverseString(word);
+
+const reverseString = (word) => {
+  let reversedWord = '';
+  for (let i in word) reversedWord = reversedWord + word[word.length - 1 - i];
+  return reversedWord;
 }
 
 /* 
